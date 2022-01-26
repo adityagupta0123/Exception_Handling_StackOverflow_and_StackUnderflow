@@ -44,16 +44,18 @@ public class Stack {
     public static void main(String[] args)  {
         stException st = new stException(5);
         try {
-            st.push(10);
-            st.push(15);
-            st.push(10);
-            st.push(15);
-            st.push(10);
-            st.push(15);
-
-        }
-        catch (StackOverflowException s){
-            System.out.println(s);
+//            st.push(10);
+//            st.push(15);
+//            st.push(10);
+//            st.push(15);
+//            st.push(10);
+//            st.push(15);
+            st.pop();
+//        }
+//        catch (StackOverflowException s){
+//            System.out.println(s);
+        } catch (StackUnderflowException e) {
+            System.out.println(e);
         }
     }
 
